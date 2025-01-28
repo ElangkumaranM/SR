@@ -1,5 +1,10 @@
 import streamlit as st
 import pandas as pd
+import os
+
+# Load credentials from environment variables
+USERNAME = os.environ.get("USERNAME")
+PASSWORD = os.environ.get("PASSWORD")
 
 # Google Sheets CSV Export URL (constant)
 SHEET_URL = "https://docs.google.com/spreadsheets/d/1W1BJWBI8nycdey0_3-F13WUQGI7Gjx5rgYGpjOvUq3Q/export?format=csv"
